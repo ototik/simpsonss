@@ -1,16 +1,15 @@
 import React from "react";
 
-const Character = ({ character }) => {
+function Character({ simpson }) {
   return (
     <div>
-      <h1> Simpsons Quotes </h1>
-      <div class="frame">
-        <p class="quote">{character.quote}</p>
-        <p class="name">{character.name}</p>
-        <p class="image">{character.image}</p>
-      </div>
+      <p>{simpson.quote}</p>
+      <p>{simpson.character}</p>
+      <p>
+        <img src={simpson.image} alt="simpsons" />{" "}
+      </p>
     </div>
   );
-};
+}
 
 export default Character;
